@@ -138,7 +138,7 @@ body {
     font-size: 12vw;
     line-height: 13.5vw;
     transform: translateY(-3vw);
-    background: linear-gradient(to bottom, #6F0000, #6f000000);
+    background: linear-gradient(to bottom, rgb(111,0,0), rgb(255, 203, 203), white);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
