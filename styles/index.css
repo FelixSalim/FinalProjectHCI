@@ -76,8 +76,8 @@ body {
 
 .navbar .menus a:hover {
     color: #FF5200;
-    transition: 1s;
-    /* transform: scale(0.95); */
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 .navbar .menus a:nth-child(1) {
