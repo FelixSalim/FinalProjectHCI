@@ -200,3 +200,13 @@ body {
 .circuit-dtl-img4 {
     background-color: #F3C13B;
 }
+
+.circuit-img {
+    height: 45vw;
+    width: 45.5vw;
+}
+
+.circuit-img img{
+    width: 100%;
+    height: auto;
+}
