@@ -147,13 +147,13 @@ body {
 .date {
     font-family: "Yellowtail", cursive;
     font-weight: 400;
-    font-size: 4.7vw;
-    line-height: 6vw;
+    font-size: 4.6vw;
+    line-height: calc(1.2 * 4.6vw);
     width: fit-content;
     height: fit-content;
     position: relative;
-    top: -6vw;
-    left: 48vw;
+    top: -5.6vw;
+    left: 48.3vw;
     color: black;
 }
 
