@@ -100,13 +100,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    opacity: 0.45;
     height: auto;
     z-index: -1;
 }
 
 .circuit-title {
     width: 100%;
-    margin-top: 12vw;
+    margin-top: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +124,7 @@ body {
 
 .cc-shadow {
     position: absolute;
-    top: 8vw;
+    top: 31vw;
     font-family: "Montserrat", sans-serif;
     font-size: calc(2.6 * 3.5vw);
     font-weight: 600;
