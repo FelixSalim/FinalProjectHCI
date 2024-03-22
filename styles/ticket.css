@@ -87,3 +87,116 @@ body {
 .navbar .menus a:not(:nth-child(2)){
     font-weight: 400;
 }
+
+.circuit-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.circuit-section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.circuit-title {
+    width: 100%;
+    margin-top: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.cc-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 3.5vw;
+    line-height: calc(1.2 * 3.5vw);
+}
+
+.cc-shadow {
+    position: absolute;
+    top: 8vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: calc(2.6 * 3.5vw);
+    font-weight: 600;
+    color: rgb(0, 38, 59, 0.55);
+    line-height: calc(1.2 * 2.6 * 3.5vw);
+    z-index: -1;
+}
+
+.cc-desc {
+    margin: 2.5vw 0;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+    color: white;
+    font-size: 1.4vw;
+    line-height: calc(1.8 * 1.4vw);
+    font-weight: 450;
+}
+
+.circuit-img-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circuit-details {
+    width: 26vw;
+    height: 22.5vw;
+    background: linear-gradient(to bottom right, #6F0000, #6F000000);
+    border-radius: 9.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circuit-details > div {
+    display: flex;
+    width: 100%;
+    margin: 0.5vw 5vw;
+    align-items: center;
+    flex-direction: row;
+}
+
+.circuit-details div p {
+    font-family: "Roboto Serif", serif;
+    color: white;
+    font-weight: 450;
+    font-size: 1.2vw;
+    line-height: calc(1.8*1.2vw);
+}
+
+.circuit-details > div > div {
+    width: 3vw;
+    height: 1.7vw;
+    border-radius: 2vw;
+    margin-right: 0.85vw;
+}
+
+.circuit-dtl-img1 {
+    background-color: #FF7B00;
+}
+
+.circuit-dtl-img2 {
+    background-color: #25B61F;
+}
+
+.circuit-dtl-img3 {
+    background-color: #01ACE0;
+}
+
+.circuit-dtl-img4 {
+    background-color: #F3C13B;
+}
