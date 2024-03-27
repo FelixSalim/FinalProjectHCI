@@ -392,3 +392,134 @@ body {
     opacity: 1;
     transition: 1s ease-in-out;
 }
+
+.footer {
+    width: 100%;
+    margin-top: 50vw;
+    display: flex;
+    flex-direction: column;    
+}
+
+.footer-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.47;
+    position: absolute;
+    transform: translateY(-23vw);
+    z-index: -1;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 0 10vw;
+    font-weight: 400;
+    height: 11vw;
+}
+
+.footer-left p {
+    font-size: 1.5vw;
+    line-height: calc(1.2 * 1.5vw);
+}
+
+.ft-title {
+    font-size: calc(2.4 * 1.5vw) !important;
+    margin-bottom: 2vw;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    align-self: center;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right p, .quick-links a {
+    font-size: calc(0.75 * 1.5vw);
+    line-height: calc(1.2 * 0.9 * 1.5vw);
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+.quick-links a:hover {
+    transform: scale(1.1); 
+    transition: 0.5s ease-in-out;
+    color: #FF5200;
+}
+
+.ql-title, .contacts-title {
+    font-size: calc(1.2 * 1.5vw) !important;
+    font-weight: 600 !important;
+    margin-bottom: 1.3vw;
+}
+
+.footer-bottom {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+    font-size: calc(0.7 * 1.5vw);
+}
+
+.phone-number, .email-info {
+    font-weight: 600;
+    font-size: calc(0.8 * 1.5vw) !important;
+    color: #00A1AB;
+}
+
+.footer-botright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.footer-icons img {
+    width: 2vw;
+    height: 2vw;
+    transition: 0.5s ease-in-out;
+}
+
+.footer-icons img:nth-child(3), .footer-icons img:nth-child(4) {
+    width: 2.2vw;
+    height: 1.8vw;
+}
+
+.chat-hover-icon, .email-hover-icon {
+    position: absolute;
+    z-index: -1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.email-hover-icon {
+    transform: translateX(4.09vw);
+}
