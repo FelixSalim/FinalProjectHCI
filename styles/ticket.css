@@ -88,6 +88,39 @@ body {
     font-weight: 400;
 }
 
+.banner {
+    margin-top: 4vw;
+    z-index: -1;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner p {
+    position: absolute;
+    top: 19.7vw;
+    left: 21.5vw;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    font-size: 6vw;
+    line-height: calc(1.8 * 6vw);
+}
+
+.banner-transition-bg {
+    position: absolute;
+    background-color: #5B788A;
+    filter: blur(10px);
+    width: 120%;
+    align-self: center;
+    height: 15vw;
+    top: 62.5vw;
+}
+
 .circuit-section {
     width: 100%;
     height: auto;
@@ -97,8 +130,6 @@ body {
 
 .circuit-section-bg {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     opacity: 0.45;
     height: auto;
@@ -114,7 +145,7 @@ body {
     height: auto;
 }
 
-.cc-title {
+.cc-title, .tt-title {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     color: white;
@@ -122,9 +153,9 @@ body {
     line-height: calc(1.2 * 3.5vw);
 }
 
-.cc-shadow {
+.cc-shadow, .tt-shadow {
     position: absolute;
-    top: 31vw;
+    top: 95.3vw;
     font-family: "Montserrat", sans-serif;
     font-size: calc(2.6 * 3.5vw);
     font-weight: 600;
@@ -150,7 +181,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .circuit-details {
@@ -203,11 +234,201 @@ body {
 }
 
 .circuit-img {
-    height: 45vw;
-    width: 45.5vw;
+    height: 48.5vw;
+    width: 49vw;
 }
 
 .circuit-img img{
     width: 100%;
     height: auto;
+}
+
+.transition-bg {
+    position: absolute;
+    z-index: -1;
+    top: 170vw;
+    left: -20vw;
+    background: linear-gradient(to bottom, #023447, #00263B);
+    width: 120vw;
+    height: 90vw;
+    margin-top: 1vw;
+    filter: blur(10px);
+}
+
+.ticket-section {
+    width: 100%;
+    margin-top: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tt-shadow {
+    color: rgb(0, 94, 100, 0.28);
+    top: 181.5vw;
+}
+
+.tt-desc {
+    color: #00A1AB;
+    margin-top: 6vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.2vw;
+}
+
+.front-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.seat-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vw;
+}
+
+.seat-card-container > div {
+    width: 17vw;
+    height: 25vw;
+    border-radius: 12px;
+}
+
+.front-card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card-shadow {
+    display: flex;
+    width: 17vw;
+    height: 25vw;
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 -16.8vw 30px white inset;
+} 
+
+.card-desc {
+    padding: 1vw;
+    z-index: 1;
+}
+
+.card-desc .attr {
+    display: flex;
+    flex-direction: row;
+    margin: 0.9vw 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.img-card-container {
+    display: flex;
+    width: 2.5vw;
+    height: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-desc .attr p {
+    display: flex;
+    width: 12vw;
+    height: 2vw;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+
+.seat-card-container > div:nth-child(2) > .front-card > .card-desc .attr {
+    margin: 2vw 0;
+}
+
+.screen-icon {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+.walking-icon {
+    width: 2vw;
+    height: 2vw;
+}
+
+.dollar-icon {
+    width: 1vw;
+    height: 1.2vw;
+}
+
+.flag-icon {
+    width: 1.3vw;
+    height: 1.5vw;
+}
+
+.star-icon {
+    width: 1.3vw;
+    height: 1.3vw;
+}
+
+.card-desc-title {
+    color: #FF5200;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top: -2.5vw;
+}
+
+.back-card {
+    width: 17vw;
+    height: 25vw;
+    border: 1.35px solid #FF5200;
+    position: absolute;
+    transform: translate(-1.8vw, -22vw);
+    z-index: -1;
+}
+
+.seat-card-container > div:nth-child(1) {
+    margin-top: 2vw;
+}
+
+.seat-card-container > div:nth-child(2) {
+    margin-top: 6vw;
+}
+
+.seat-card-container > div:nth-child(3) {
+    margin-top: 3vw;
+}
+
+.get-tickets-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A1AB;
+    border-radius: 7px;
+    width: 15vw;
+    height: 2vw;
+}
+
+.seat-card-container > div:nth-child(2) > .front-card > .card-desc > .get-tickets-btn {
+    margin-top: -0.35vw;
+}
+
+.get-tickets-btn p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1vw;
+    color: white;
+    margin-right: 0.7vw;
+    margin-left: 1vw;
+}
+
+.get-tickets-btn img {
+    width: 2vw;
+    height: 1.8vw;
 }
