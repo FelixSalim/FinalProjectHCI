@@ -97,6 +97,7 @@ body {
 .banner img {
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .banner p {
@@ -113,12 +114,13 @@ body {
 
 .banner-transition-bg {
     position: absolute;
-    background-color: #5B788A;
+    background: linear-gradient(to bottom, #607C8B, #607C8B, #5A788900);
     filter: blur(10px);
     width: 120%;
     align-self: center;
-    height: 12vw;
+    height: 13vw;
     top: 62.5vw;
+    z-index: 2;
 }
 
 .circuit-section {
