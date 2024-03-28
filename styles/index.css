@@ -209,9 +209,10 @@ body {
 }
 
 .blur-break {
-    width: 100%;
+    width: 120%;
+    align-self: center;
     background-color: #00263B;
-    height: 5vh;
+    height: 8vw;
     z-index: 8;
     filter: blur(10px);
     margin-top: 8.35vw;
@@ -221,16 +222,16 @@ body {
     display: flex;
     position: relative;
     background-color: #00263B;
-    height: 100vh;
+    height: 80vw;
     width: 100%;
     margin-top: -2vw;
-    z-index: 8;
+    z-index: 1;
 }
 
 .event-card-container-bg {
     background: linear-gradient(to bottom, #00263B, rgb(11, 129, 136, 0.28), #00263B);
     width: 100%;
-    height: 150vh;
+    height: 70vw;
     z-index: 9;
     position: absolute;
     filter: blur(10px);
@@ -348,6 +349,7 @@ body {
 
 .carousel-desc p:first-of-type {
     font-size: 2.6vw;
+    font-weight: 800;
 }
 
 .smaller p:first-of-type {
@@ -391,6 +393,29 @@ body {
 .carousel-slide .active p{
     opacity: 1;
     transition: 1s ease-in-out;
+}
+
+.blur-break-2 {
+    width: 120%;
+    align-self: center;
+    background-color: #00263B;
+    height: 8vw;
+    z-index: 8;
+    filter: blur(10px);
+    position: absolute;
+    top: 123vw;
+}
+
+.poster-section {
+    width: 100%;
+    margin-top: -7vw;
+    z-index: 1;
+}
+
+.poster-section-bg {
+    width: 100%;
+    opacity: 0.42;
+    z-index: -1;
 }
 
 .footer {
