@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .menus {
-    width: 45vw;
+    width: 30vw;
     height: 4vw;
     display: flex;
     justify-content: space-between;
@@ -74,10 +74,22 @@ body {
     line-height: 1.8vw;
 }
 
+.navbar .menus a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FF5200;
+    transition: 0.5s ease-in-out;
+}
+
 .navbar .menus a:hover {
     color: #FF5200;
-    transform: scale(1.1);
     transition: 0.5s ease-in-out;
+}
+
+.navbar .menus a:hover::after {
+    width: 100%;
 }
 
 .navbar .menus a:nth-child(1) {
@@ -209,13 +221,21 @@ body {
 }
 
 .blur-break {
-    width: 120%;
-    align-self: center;
+    width: 100%;
     background-color: #00263B;
     height: 8vw;
     z-index: 8;
     filter: blur(10px);
     margin-top: 8.35vw;
+}
+
+.blur-break-overlay {
+    width: 100%;
+    height: 6vw;
+    position: absolute;
+    background-color: #00263B;
+    top: 51vw;
+    z-index: 7;
 }
 
 .body-content {
@@ -330,11 +350,14 @@ body {
     z-index: 1;
 }
 
-.prev {
+.prev, .next {
     position: relative;
+    height: 33vw;
+}
+
+.prev {
     left: 6.8vw;
     z-index: 1;
-    height: 33vw;
 }
 
 .prev img, .next img {
@@ -342,9 +365,7 @@ body {
 }
 
 .next {
-    position: relative;
     right: 11vw;
-    height: 33vw;
 }
 
 .carousel-desc p:first-of-type {
@@ -396,7 +417,7 @@ body {
 }
 
 .blur-break-2 {
-    width: 120%;
+    width: 100%;
     align-self: center;
     background-color: #00263B;
     height: 8vw;
@@ -404,6 +425,15 @@ body {
     filter: blur(10px);
     position: absolute;
     top: 123vw;
+}
+
+.blur-break-overlay-2 {
+    position: absolute;
+    width: 100%;
+    height: 6vw;
+    top: 124.3vw;
+    background-color: #00263B;
+    z-index: 7;
 }
 
 .poster-section {
@@ -416,11 +446,115 @@ body {
     width: 100%;
     opacity: 0.42;
     z-index: -1;
+    position: absolute;
+}
+
+.poster-section-content {
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7vw;
+}
+
+.poster-section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.5vw;
+    font-weight: 800;
+    line-height: calc(1.2 * font-size);
+    margin: 1vw 0 3vw 0;
+}
+
+.poster-section-inner {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.poster-slider {
+    width: 55%;
+    overflow: hidden;
+}
+
+.poster-slider hr {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(calc(-10vw - (4 * 25vw)));
+    }
+}
+
+.poster-slider-track {
+    width: 80%;
+    display: flex;
+    padding: 4vw 0;
+    animation: slide 10s linear infinite;
+}
+
+.poster-slider-track div {
+    margin-right: 3vw;
+    perspective: 1vw;
+}
+
+.poster-slider-track:hover {
+    animation-play-state: paused;
+}
+.poster-slider-track div img {
+    width: 22vw;
+    height: auto;
+}
+
+
+.poster-slider-track div img:hover {
+    transform: translateZ(0.15vw);
+    transition: 0.5s ease-in-out;
+}
+
+.poster-description {
+    margin-left: 6vw;
+    height: 20vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.poster-description > div {
+    display: flex;
+    width: 25vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.poster-description p {
+    width: 20vw;
+}
+
+.icon-container {
+    display: flex;
+    width: 3.2vw;
+    height: 3vw;
+    justify-content: center;
+}
+
+.loc .icon-container img {
+    width: 2.1vw;
+    height: 3vw;
+}
+
+.time .icon-container img {
+    width: 3.2vw;
+    height: 2.6vw;
 }
 
 .footer {
     width: 100%;
-    margin-top: 50vw;
+    margin-top: 30vw;
     display: flex;
     flex-direction: column;    
 }
@@ -482,10 +616,38 @@ hr {
     color: white;
 }
 
+.quick-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FF5200;
+    transition: 0.5s ease-in-out;
+}
+
 .quick-links a:hover {
-    transform: scale(1.1); 
     transition: 0.5s ease-in-out;
     color: #FF5200;
+}
+
+.quick-links a:nth-of-type(1) {
+    width: 3.5vw;
+}
+
+.quick-links a:nth-of-type(2) {
+    width: 5vw;
+}
+
+.quick-links a:nth-of-type(3) {
+    width: 4.5vw;
+}
+
+.quick-links a:nth-of-type(4) {
+    width: 6vw;
+}
+
+.quick-links a:hover::after {
+    width: 100%;
 }
 
 .ql-title, .contacts-title {
